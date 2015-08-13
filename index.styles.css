@@ -1,3 +1,9 @@
 body {
-	background-color: #369BC8
+	background-color: #369BC8;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
 }
