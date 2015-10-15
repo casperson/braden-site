@@ -1,9 +1,45 @@
-body {
+.header-main {
 	background-color: #369BC8;
 	color: white;
-	font-family: Arial, Helvetica, sans-serif;
+    margin-top: -2rem;
+    padding: 1.3rem;
+    font-family: 'Raleway', Helvetica, sans-serif;
 }
 
-h1, h2 {
+h1 {
 	text-align: center;
+}
+
+.bc-navbar {
+    border-bottom: #369BC8 solid 1px;
+}
+
+.infinite-color {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear; 
+}
+
+.palindrome__title {
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: bold;
+    font-size: 36px;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15rem;
+    margin-bottom: 4rem;
+	text-align: center;
+}
+
+.palindrome__inputs {
+	text-align: center;	
+	margin-top: 10px;
+    max-width: 75%;
+}
+
+.palindrome {
+/*	background-image: url('palindrominator/images/blue pattern.jpg');*/
 }

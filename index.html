@@ -1,12 +1,58 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" ng-app="app">
 	<head>
 		<title>Braden Casperson | The Site</title>
 		<link rel="stylesheet" href="index.styles.css">
+        <!-- Latest compiled and minified CSS -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.min.css">
+        
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="assets/animate.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Angular, Baby! -->
+        <script src="assets/angular.js"></script>
+        
+        <script src="index.js"></script>
+        
+        <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
-		<h1>Braden Casperson Has a Site</h1>
-		<h2>Here's the stuff</h2>
+	<body ng-controller="BradenController">
+        <div class="header-main">
+            <h1 class="text-center animated fadeInDown">Braden Casperson</h1>
+            <p class="text-center animated fadeInUp">I like code</p>
+        </div>
+        <div class="bc-navbar">
+            <ul class="nav nav-pills nav-justified">
+                <li role="" class="Active"><a href="#" ng-click="showHome = true; showPalindrome = false">Home</a></li>
+<!--                <li role=""><a href="#">Play With Me</a></li>-->
+                <li role="" ng-click="showPalindrome = true; showHome = false;"><a href="#">Palindrominator</a></li>
+            </ul>
+        </div>
+        
+<!--
+        <div ng-if="showHome" class="text-center">
+            <img src="assets/images/baby-donkey.jpg"
+        </div>
+-->
+            
+        <div ng-if="showPalindrome" class="text-center palindrome animated bounceInLeft">
+            <div class="palindrome__title text-center infinite-color">
+                <p>Enter a Word or Number to See If It Is a Palindrome</p>
+            </div>	
+
+            <div class="palindrome__inputs container-fluid">
+                <input type="text" class="form-control" placeholder="Enter your word or number" ng-model="palindromeInput"><br>
+                <p>{{palindromeInput}}</p>
+                <button class="btn btn-primary btn-lg" ng-click="palCheck()">Palindrominate</button>
+            </div>
+            <div class="palindrome__answer animated fadeIn">{{palindromeResults}}</div>
+        </div>
 	</body>
 </html>

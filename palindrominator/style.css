@@ -1,0 +1,29 @@
+﻿body{
+	background-image: url('images/blue pattern.jpg');
+}
+
+#title{
+	font-family: "Poor Richard";
+	font-weight: bold;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 250px;
+	text-align: center;
+}
+
+#inputs{
+	text-align: center;	
+	margin-top: 10px;
+}
+
+p{
+	font-family: "Poor Richard";
+	font-weight: bold;
+	font-size: x-large;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	text-align: center;
+}
