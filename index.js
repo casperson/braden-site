@@ -4,6 +4,7 @@ app.controller('BradenController', function ($scope) {
 //    var vm = this;
     $scope.showPalindrome = false;
     $scope.showHome = true;
+    $scope.palindromeInput = "";
     
     // function to check for a palindrome without splitting the string 
     // in an array and the using Array.reverse()

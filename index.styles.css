@@ -10,8 +10,57 @@ h1 {
 	text-align: center;
 }
 
+.bc-margin-bottom-36 {
+    margin-bottom: 3.6rem;
+}
+
+.bc-margin-bottom-72 {
+    margin-bottom: 7.2rem;
+}
+
+.bc-margin-top-36 {
+    margin-top: 3.6rem;
+}
+
+.logo-height {
+    height: 15rem;
+}
+
 .bc-navbar {
     border-bottom: #369BC8 solid 1px;
+/*    position: fixed;*/
+}
+
+.bc-canopy {
+    background-color: #4CA551;
+    height: 400px;
+    color: white;
+}
+
+.bc-canopy__logo {
+    height: 8rem;
+}
+
+.bc-oit {
+    background-color: #0B3467;
+    height: 400px;
+    color: white;
+}
+
+.bc-oit__logo {
+    height: 16rem;
+}
+
+.bc-resume {
+    font-size: 3.6rem;
+}
+
+.bc-resume__img {
+/*    border: 1px solid black;*/
+    width: 80%;
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.75);
 }
 
 .infinite-color {
@@ -38,6 +87,15 @@ h1 {
 	text-align: center;	
 	margin-top: 10px;
     max-width: 75%;
+}
+
+.bc-font__railway {
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.home__div {
+    font-size: 3.6rem;
+    margin-top: 2rem;
 }
 
 .palindrome {
