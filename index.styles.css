@@ -3,11 +3,17 @@
 	color: white;
     margin-top: -2rem;
     padding: 1.3rem;
-    font-family: 'Raleway', Helvetica, sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;    
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #DFEFF6 !important;
+    color: #369BC8 !important;
 }
 
 h1 {
 	text-align: center;
+    font-size: 72px;
 }
 
 .bc-margin-bottom-36 {
@@ -27,13 +33,21 @@ h1 {
 }
 
 .bc-navbar {
-    border-bottom: #369BC8 solid 1px;
+    border-bottom: #AFD8E9 solid 1px;
 /*    position: fixed;*/
 }
 
+.bc-about-me__pictures {
+    max-height: 25rem;
+    max-width: 100%;
+}
+
+.bc-about-me__pictures-braden {
+   max-width: 35%; 
+}
 .bc-canopy {
     background-color: #4CA551;
-    height: 400px;
+    min-height: 400px;
     color: white;
 }
 
@@ -43,7 +57,7 @@ h1 {
 
 .bc-oit {
     background-color: #0B3467;
-    height: 400px;
+    min-height: 400px;
     color: white;
 }
 
@@ -87,6 +101,10 @@ h1 {
 	text-align: center;	
 	margin-top: 10px;
     max-width: 75%;
+}
+
+.bc-palindrome__answer {
+    font-size: 2.4rem;
 }
 
 .bc-font__railway {

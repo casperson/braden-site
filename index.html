@@ -12,6 +12,11 @@
         
         <!-- Animate.css -->
         <link rel="stylesheet" href="assets/animate.css">
+        
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        
+        <!-- jQuery -->
+        <script src="assets/jquery-2.1.4.min.js"></script>
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -23,21 +28,21 @@
         
         <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 	</head>
-	<body ng-controller="BradenController">
+	<body ng-controller="BradenController as vm">
         <div class="header-main">
-            <h1 class="text-center animated fadeInDown">Braden Casperson</h1>
-            <p class="text-center animated fadeInUp">I like code</p>
+            <h1 class="text-center">Braden Casperson</h1>
+            <p class="text-center">I like code</p>
         </div>
         <div class="bc-navbar">
             <ul class="nav nav-pills nav-justified">
-                <li role="" class="Active"><a href="#" ng-click="showHome = true; showPalindrome = false; showResume = false">Home</a></li>
+                <li role="" class="active"><a href="index.html">Home</a></li>
 <!--                <li role=""><a href="#">Play With Me</a></li>-->
-                <li role="" ng-click="showPalindrome = true; showHome = false; showResume = false;"><a href="#">Palindrominator</a></li>
-                <li role="" ng-click="showPalindrome = false; showHome = false; showResume = true"><a href="#">Résumé Download</a></li>
+                <li role="" class=""><a href="palindrominator.html">Palindrominator</a></li>
+                <li role="" class=""><a href="resume.html">Résumé Download</a></li>
             </ul>
         </div>
         
-        <div ng-if="showHome" class="text-center bc-font__railway home__div">
+        <div class="text-center bc-font__railway home__div">
             <div class="bc-margin-bottom-72">
                 <p class="bc-margin-bottom-36">Hi, I'm Braden.</p>
                 <p class="bc-margin-bottom-36">I'm a developer.</p>
@@ -105,28 +110,18 @@
                 </div>
             </div>
             
-        </div>
-            
-        <div ng-if="showPalindrome" class="text-center palindrome animated bounceInLeft">
-            <div class="palindrome__title text-center infinite-color">
-                <p>Enter a Word or Number to See If It Is a Palindrome</p>
-            </div>	
-
-            <div class="palindrome__inputs container-fluid">
-                <input type="text" class="form-control" placeholder="Enter your word or number" ng-model="palindromeInput"><br>
-                <p>{{palindromeInput}}</p>
-                <button class="btn btn-primary btn-lg" ng-click="palCheck()">Palindrominate</button>
+            <div>
+                <p class="bc-margin-bottom-72">I do other things than just work and study though, too.</p>
+                <p class="bc-margin-bottom-72">I love sports. Take, for example, Ultimate Frisbee. <a href="https://youtu.be/HhUays2ehyI"><img src="assets/images/discraft.jpg" class="bc-about-me__pictures"></a></p>
+                <p class="bc-margin-bottom-72">Music is excellent. This is my guitar. <a href="https://youtu.be/k4ixAfJ1LuI?t=1m37s"><img src="assets/images/guitar.jpg"  class="bc-about-me__pictures"></a></p>
+                <p class="bc-margin-bottom-72">The outdoors is very refreshing, I snowboard using this guy. <a href="https://youtu.be/V9xuy-rVj9w"><img src="assets/images/snowboard.png"  class="bc-about-me__pictures"></a></p>
+                <p class="bc-margin-bottom-72">So that's me. Maybe boring, but that's okay. <br><a href="https://www.linkedin.com/in/bradencasperson"><img src="assets/images/braden-warpedtour.jpg"  class="bc-about-me__pictures-braden bc-margin-top-36"></a></p>
+                
+                <p class="bc-margin-bottom-72">See ya.</p>
             </div>
-            <div class="palindrome__answer animated fadeIn">{{palindromeResults}}</div>
+            
         </div>
         
-        <div class="bc-resume text-center bc-font__railway" ng-if="showResume">
-            <p class="bc-margin-bottom-36 bc-margin-top-36">Here is my traditional résumé for your viewing pleasure or download. 
-                <br>(Don't worry, it's totally legal)
-                <br><a class="btn btn-success" href="assets/Braden_Casperson_Resume_Oct_2015.pdf" download><span class="glyphicon glyphicon-save"></span> Download this bad boy</a></p>
-            <div class="bc-margin-bottom-36 text-center">
-                <img class="bc-resume__img" src="assets/images/Braden_Casperson_Resume.png">
-            </div>
-        </div>
+        <footer class="bc-font__railway text-center">© Braden Casperson 2015</footer>
 	</body>
 </html>
