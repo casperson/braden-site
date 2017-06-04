@@ -1,0 +1,100 @@
+nav {
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #17A900;
+}
+
+.nav__logo {
+  height: 150px;
+  width: 200px;
+  font-size: 20px;
+  margin-left: 30px;
+  color: #FFFFFF;
+}
+
+.nav__logo-image {
+  width: 90px;
+  height: 90px;
+  z-index: 2;
+  position: relative;
+  top: 33px;
+  left: -25px;
+  color: #17A900;
+}
+
+.nav__logo-image-main {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+  top: 17px;
+  left: 2px;
+  background: url("../../Braden2-circle-smallest.png") no-repeat center;
+  background-size: cover;
+}
+
+.nav__logo-image-text {
+  padding-left: 100px;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: relative;
+  display: block;
+  z-index: 3;
+  padding-top: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav__logo-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 150px;
+  z-index: 0;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: translate(-10%, -100%) rotate(-22deg);
+  transform: translate(-10%, -100%) rotate(-22deg);
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+  background-color: #FFFFFF;
+  border: 1px solid #17A900;
+}
+
+.nav__nav-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__nav-items__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav__nav-items__item a {
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: color 0.25s;
+}
+
+.nav__nav-items__item:hover a {
+  color: #00A47B;
+}
+
+.nav__nav-items__item--contact {
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 5px 25px;
+}
