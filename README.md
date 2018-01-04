@@ -1,3 +1,1 @@
-# bradencasperson-com
-
-My site is bradencasperson.com.
+This is my personal website, braden.io
