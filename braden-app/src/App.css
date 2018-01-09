@@ -3,9 +3,11 @@
   background-color: #FF7560;
   color: white;
   height: 100%;
+  position: relative;
 }
 
 .App-container {
+  background-color: #FF7560;
   display: block;
   position: relative;
   font-family: 'Port Lligat Slab', serif;
@@ -66,6 +68,13 @@
   padding-right: 15px;
   padding-left: 15px;
   color: white;
+}
+
+@media screen and (max-width: 321px) {
+  .fa {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .fa:hover {
